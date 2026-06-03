@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vortex AI - Orchestrate your development workflow with autonomous intelligence. Streamline operations, automate deployments, and secure code pipelines.">
+    <title>Vortex AI | Next-Gen Workflow Orchestration</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="#hero" class="logo">
+                <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 2L30 10V22L16 30L2 22V10L16 2Z" stroke="url(#logo-grad)" stroke-width="2.5" stroke-linejoin="round"/>
+                    <path d="M16 8L25 13V19L16 24L7 19V13L16 8Z" fill="url(#logo-grad)" fill-opacity="0.3" stroke="url(#logo-grad)" stroke-width="1.5" stroke-linejoin="round"/>
+                    <circle cx="16" cy="16" r="3" fill="#06b6d4" class="logo-glow"/>
+                    <defs>
+                        <linearGradient id="logo-grad" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#8b5cf6"/>
+                            <stop offset="0.5" stop-color="#3b82f6"/>
+                            <stop offset="1" stop-color="#06b6d4"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">VORTEX<span class="logo-dot">.ai</span></span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li class="mobile-cta-li"><a href="#get-started" class="btn btn-primary btn-mobile-cta">Get Started</a></li>
+                </ul>
+            </nav>
+
+            <!-- Actions (CTA) -->
+            <div class="header-actions">
+                <a href="#get-started" class="btn btn-nav">Get Started</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation" aria-expanded="false" aria-controls="navMenu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-glow"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span class="badge-text">v2.4 Autonomous Engine Live</span>
+                    </div>
+                    <h1 class="hero-title">Orchestrate Your Workflow With <span class="gradient-text">Autonomous AI</span></h1>
+                    <p class="hero-subtitle">
+                        Streamline collaboration, automate repetitive deployments, and secure multi-cloud infrastructure in real-time with Vortex's next-generation cognitive engine.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#get-started" class="btn btn-primary">Start Free Trial</a>
+                        <a href="#about" class="btn btn-secondary">
+                            <span>Watch Demo</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.5 3.5V12.5L12.5 8L5.5 3.5Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10x</span>
+                            <span class="stat-label">Faster Deployments</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">99.99%</span>
+                            <span class="stat-label">System Uptime</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">14.2M</span>
+                            <span class="stat-label">Tasks Automated</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="image-card-glow"></div>
+                    <div class="image-wrapper">
+                        <img src="hero_graphic.png" alt="Vortex AI Dashboard Visualization" class="hero-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features / Services Section -->
+        <section id="features" class="features-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Engineered for Modern Teams</h2>
+                    <p class="section-subtitle">Vortex handles the complexity of operations so your team can focus on building beautiful products.</p>
+                </div>
+                <div class="features-grid">
+                    <!-- Feature Card 1 -->
+                    <div class="feature-card">
+                        <div class="feature-glow"></div>
+                        <div class="feature-icon-container">
+                            <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#feat-grad-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 17L12 22L22 17" stroke="url(#feat-grad-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 12L12 17L22 12" stroke="url(#feat-grad-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                    <linearGradient id="feat-grad-1" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#8b5cf6"/>
+                                        <stop offset="1" stop-color="#3b82f6"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card-title">Autonomous Pipelines</h3>
+                        <p class="feature-card-text">Set up self-healing pipelines that automatically test, analyze security vulnerabilities, and deploy without writing manual scripts.</p>
+                    </div>
+
+                    <!-- Feature Card 2 -->
+                    <div class="feature-card">
+                        <div class="feature-glow"></div>
+                        <div class="feature-icon-container">
+                            <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke="url(#feat-grad-2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96" stroke="url(#feat-grad-2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <line x1="12" y1="22.08" x2="12" y2="12" stroke="url(#feat-grad-2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                    <linearGradient id="feat-grad-2" x1="3" y1="2.08" x2="21" y2="22.08" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#3b82f6"/>
+                                        <stop offset="1" stop-color="#06b6d4"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card-title">Distributed Clustering</h3>
+                        <p class="feature-card-text">Instantly distribute loads across edge locations. Vortex scales resources dynamically based on actual millisecond load spikes.</p>
+                    </div>
+
+                    <!-- Feature Card 3 -->
+                    <div class="feature-card">
+                        <div class="feature-glow"></div>
+                        <div class="feature-icon-container">
+                            <svg class="feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke="url(#feat-grad-3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="url(#feat-grad-3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                    <linearGradient id="feat-grad-3" x1="3" y1="7" x2="21" y2="22" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#06b6d4"/>
+                                        <stop offset="1" stop-color="#8b5cf6"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="feature-card-title">Zero-Trust Security</h3>
+                        <p class="feature-card-text">Enforce micro-segmentation and short-lived credentials automatically. Keep your infrastructure locked down at all times.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Split Section -->
+        <section id="about" class="about-section">
+            <div class="about-bg-glow"></div>
+            <div class="container about-container">
+                <div class="about-image-wrapper">
+                    <div class="image-card-glow border-glow-blue"></div>
+                    <div class="image-wrapper">
+                        <img src="about_image.png" alt="Neural connections mapping database linkages" class="about-img">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2 class="about-title">Built for Performance. <span class="gradient-text-alt">Optimized for Scale.</span></h2>
+                    <p class="about-subtitle">
+                        Vortex acts as a cognitive layer over your cloud accounts, eliminating manual Kubernetes configurations, script writing, and tedious monitoring.
+                    </p>
+                    <ul class="about-points">
+                        <li class="about-point-item">
+                            <div class="point-icon">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 4.5L6.75 12.75L3 9" stroke="#06b6d4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="point-text">
+                                <strong>Predictive Autoscaling</strong>
+                                <p>Anticipates spikes before they happen by analyzing historical usage patterns.</p>
+                            </div>
+                        </li>
+                        <li class="about-point-item">
+                            <div class="point-icon">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 4.5L6.75 12.75L3 9" stroke="#06b6d4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="point-text">
+                                <strong>Unified Observability</strong>
+                                <p>Trace logs, metrics, and application traces on a single responsive dashboard.</p>
+                            </div>
+                        </li>
+                        <li class="about-point-item">
+                            <div class="point-icon">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 4.5L6.75 12.75L3 9" stroke="#06b6d4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="point-text">
+                                <strong>Multi-cloud Orchestration</strong>
+                                <p>Deploy parts of your system to AWS, GCP, or Azure without changing code configurations.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials / Social Proof Section -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Loved by Engineering Teams</h2>
+                    <p class="section-subtitle">Read how industry leaders are leveraging Vortex to ship better code, faster.</p>
+                </div>
+                <div class="testimonials-grid">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p class="testimonial-quote">
+                            "Vortex AI has completely transformed how we deploy. We went from deploying 3 times a week to over 40 times a day without a single minute of downtime."
+                        </p>
+                        <div class="testimonial-user">
+                            <div class="user-avatar-fallback avatar-purple">SL</div>
+                            <div class="user-info">
+                                <h4 class="user-name">Sarah Jenkins</h4>
+                                <p class="user-title">VP of Engineering at Cloudflow</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p class="testimonial-quote">
+                            "The predictive autoscaling saved us over $14,000 in cloud compute costs in our first month. The integration took less than five minutes."
+                        </p>
+                        <div class="testimonial-user">
+                            <div class="user-avatar-fallback avatar-blue">MK</div>
+                            <div class="user-info">
+                                <h4 class="user-name">Marcus Kaelen</h4>
+                                <p class="user-title">Lead DevOps Architect at Hyperion</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p class="testimonial-quote">
+                            "With Vortex, security compliance audit prep was reduced from 2 weeks of manual report writing to a single button click. An absolute game-changer."
+                        </p>
+                        <div class="testimonial-user">
+                            <div class="user-avatar-fallback avatar-cyan">AA</div>
+                            <div class="user-info">
+                                <h4 class="user-name">Aria Al-Jamil</h4>
+                                <p class="user-title">Chief Security Officer at Synthetix</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section id="get-started" class="cta-section">
+            <div class="cta-bg-glow"></div>
+            <div class="container cta-container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Automate Your Stack?</h2>
+                    <p class="cta-subtitle">Get 14 days free trial. No credit card required. Cancel anytime.</p>
+                    <div class="cta-buttons">
+                        <a href="#get-started" class="btn btn-primary">Start Building Now</a>
+                        <a href="#features" class="btn btn-outline">Explore Capabilities</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand-col">
+                <a href="#hero" class="logo">
+                    <svg class="logo-icon" width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 2L30 10V22L16 30L2 22V10L16 2Z" stroke="url(#footer-logo-grad)" stroke-width="2.5" stroke-linejoin="round"/>
+                        <path d="M16 8L25 13V19L16 24L7 19V13L16 8Z" fill="url(#footer-logo-grad)" fill-opacity="0.3" stroke="url(#footer-logo-grad)" stroke-width="1.5" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="footer-logo-grad" x1="2" y1="2" x2="30" y2="30" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#8b5cf6"/>
+                                <stop offset="1" stop-color="#06b6d4"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="logo-text">VORTEX<span class="logo-dot">.ai</span></span>
+                </a>
+                <p class="footer-bio">
+                    The cognitive operations engine that orchestrates cloud workloads, security compliance, and delivery pipelines with autonomous accuracy.
+                </p>
+                <div class="footer-socials">
+                  
+                    <!-- GitHub -->
+                    <a href="https://github.com/MadhavDalsaniya007" class="social-link" aria-label="GitHub">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482C19.138 20.197 22 16.44 22 12.017 22 6.484 17.522 2 12 2z"/>
+                        </svg>
+                    </a>
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/in/madhav-dalsaniya-25ab75320/" class="social-link" aria-label="LinkedIn">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-title">Platform</h4>
+                <ul class="footer-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">Architecture</a></li>
+                    <li><a href="#testimonials">Security</a></li>
+                    <li><a href="#hero">Pricing</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-title">Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="#about">Documentation</a></li>
+                    <li><a href="#features">API Status</a></li>
+                    <li><a href="#testimonials">Compliance</a></li>
+                    <li><a href="#hero">Changelog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-col">
+                <h4 class="footer-title">Contact</h4>
+                <ul class="footer-links">
+                    <li><a href="mailto:support@vortex.ai">support@vortex.ai</a></li>
+                    <li><a href="mailto:sales@vortex.ai">sales@vortex.ai</a></li>
+                    <li><a href="#about">Submit Ticket</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p class="copyright">&copy; 2026 Vortex AI Technologies Inc. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#hero">Privacy Policy</a>
+                <a href="#hero">Terms of Service</a>
+                <a href="#hero">Trust Center</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Navigation Toggle & Scroll Effects -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.getElementById('menuToggle');
+            const navMenu = document.getElementById('navMenu');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const header = document.querySelector('.site-header');
+
+            // Toggle Mobile Menu
+            menuToggle.addEventListener('click', () => {
+                const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+                menuToggle.setAttribute('aria-expanded', !isExpanded);
+                navMenu.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+                document.body.classList.toggle('menu-open');
+            });
+
+            // Close Mobile Menu when link clicked
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                    navMenu.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                    document.body.classList.remove('menu-open');
+                });
+            });
+
+            // Header Background Blur on Scroll
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+
+                // Simple Active Nav Link on Scroll
+                let current = '';
+                const sections = document.querySelectorAll('section');
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= (sectionTop - 120)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').slice(1) === current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
